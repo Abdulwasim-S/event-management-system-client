@@ -32,9 +32,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import axios from "axios";
-import Navbar from "./NavBar";
 import { useNavigate } from "react-router-dom";
 import { api_link } from "../../helper/urls";
+import NavbarComponent from "./NavbarComponent";
 
 const categories = [
   { label: "All", icon: MdLocalOffer, value: "all" },
@@ -146,7 +146,7 @@ const UserHomePage = () => {
 
   return (
     <Box maxW="1200px" mx="auto" px={{ base: 4, md: 8 }} py={6} bg={"white"}>
-      <Navbar />
+      <NavbarComponent />
       <Heading
         my={6}
         fontWeight="extrabold"

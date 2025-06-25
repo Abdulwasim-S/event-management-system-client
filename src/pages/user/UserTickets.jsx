@@ -15,7 +15,7 @@ import axios from "axios";
 import { api_link } from "../../helper/urls";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import Navbar from "./NavBar";
+import Navbar from "./NavbarComponent";
 
 const UserTickets = () => {
   const [tickets, setTickets] = useState([]);
